@@ -97,7 +97,7 @@ export function Contact() {
                     }
                     required
                     disabled={loading}
-                    className="bg-secondary/50 border-border hover:border-muted-foreground focus:border-primary transition-colors"
+                    className="bg-secondary/50 border-border hover:border-muted-foreground focus:border-primary transition-colors text-foreground"
                   />
                 </div>
                 <div className="space-y-2">
@@ -114,7 +114,7 @@ export function Contact() {
                     }
                     required
                     disabled={loading}
-                    className="bg-secondary/50 border-border hover:border-muted-foreground focus:border-primary transition-colors"
+                    className="bg-secondary/50 border-border hover:border-muted-foreground focus:border-primary transition-colors text-foreground"
                   />
                 </div>
               </div>
@@ -133,7 +133,7 @@ export function Contact() {
                   }
                   required
                   disabled={loading}
-                  className="bg-secondary/50 border-border hover:border-muted-foreground focus:border-primary transition-colors resize-none"
+                  className="bg-secondary/50 border-border hover:border-muted-foreground focus:border-primary transition-colors resize-none text-foreground"
                 />
               </div>
 
