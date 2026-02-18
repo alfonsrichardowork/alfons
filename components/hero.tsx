@@ -48,9 +48,9 @@ export function Hero() {
 <div ref={containerRef} className="bg-foreground relative min-h-screen w-full overflow-hidden">
   <Meteors number={30} />
   {/* TEXT CONTENT */}
-  <div className="relative z-10 flex min-h-screen items-center">
-    <div className="w-full px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto">          
+  <div className="inset-x-4 relative z-10 flex min-h-screen items-center">
+    {/* <div className="w-full px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto"> */}
         <motion.h1
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -61,8 +61,8 @@ export function Hero() {
             {`Hi, I’m`} <AuroraText>Alfons</AuroraText>
         </motion.h1>
 
-      </div>
-    </div>
+      {/* </div>
+    </div> */}
   </div>
 
 
@@ -99,14 +99,14 @@ export function Hero() {
             </ShimmerButton>
         </motion.div>
 
-    <div className="w-full px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto">     
+    {/* <div className="w-full px-4 sm:px-6 lg:px-8"> */}
+      {/* <div>      */}
             <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 style={{ y: descY }}
-                className="absolute top-1/2 z-50 md:w-1/3 w-full bg-foreground/60 p-2 rounded-md"
+                className="absolute top-1/2 z-50 md:w-1/2 inset-x-4 bg-foreground/60 p-2 rounded-md"
             >
                 {"I’m a mid-level full-stack web engineer with "}
                 <span className="text-secondary font-semibold">
@@ -122,8 +122,8 @@ export function Hero() {
                 <span className="text-accent font-semibold">Prisma</span>
                 {"."}
             </motion.p>
-        </div>
-      </div>
+        {/* </div> */}
+      {/* </div> */}
     </div>
 </section>
   )

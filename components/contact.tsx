@@ -52,9 +52,9 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background via-background to-secondary/20 overflow-hidden" ref={containerRef}>
+    <section id="contact" className="relative px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background via-background to-secondary/20 overflow-hidden" ref={containerRef}>
       {/* Background Image */}
-      <motion.div className="absolute inset-0 z-0 bg-[url('/images/bg-footer.png')] bg-cover bg-top-left pointer-events-none" 
+      <motion.div className="absolute inset-0 z-0 bg-[url('/images/bg-footer.png')] bg-cover bg-  -left pointer-events-none" 
             style={{ y: sectionY }}/>
       
       <div className="relative z-10 max-w-2xl mx-auto">
