@@ -13,7 +13,7 @@ export default function Home() {
     <div className="min-h-screen">
       <ScrollProgress className="h-1.5 z-100" />
       <Header />
-      <Chat/>
+      {/* <Chat/> */}
       <main className="text-background">
         <Hero />
         <Skills />
