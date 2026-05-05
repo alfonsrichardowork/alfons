@@ -16,8 +16,8 @@ export const allBrands : ProjectCardProps[] = [
     description: "",
     url: "https://webdemosbe.xyz",
     status: "development",
-    image: "/images/placeholder-sba.png",
-    tags: ['Nextjs', 'Tailwind', 'Typescript', 'Express', 'Prisma', 'MySQL']
+    image: "/images/placeholder-sba.webp",
+    tags: ['Next.js', 'Node.js', 'Tailwind', 'Typescript', 'Express', 'Prisma', 'MySQL']
   },
   {
     title: "ACR Speaker",
@@ -25,8 +25,8 @@ export const allBrands : ProjectCardProps[] = [
     description: "",
     url: "https://acrspeaker.com",
     status: "production",
-    image: "/images/placeholder-acr.png",
-    tags: ['Nextjs', 'Tailwind', 'Typescript', 'Express', 'Prisma', 'MySQL']
+    image: "/images/placeholder-acr.webp",
+    tags: ['Next.js', 'Node.js', 'Tailwind', 'Typescript', 'Express', 'Prisma', 'MySQL']
   },
   {
     title: "Legacy Speaker",
@@ -34,16 +34,16 @@ export const allBrands : ProjectCardProps[] = [
     description: "",
     url: "https://legacy.us.com",
     status: "production",
-    image: "/images/placeholder-legacy.png",
-    tags: ['Nextjs', 'Tailwind', 'Typescript', 'Express', 'Prisma', 'MySQL']
+    image: "/images/placeholder-legacy.webp",
+    tags: ['Next.js', 'Node.js', 'Tailwind', 'Typescript', 'Express', 'Prisma', 'MySQL']
   },
   {
     title: "Roadmaster",
-    logo: "/images/favicon-roadmaster.ico",
+    logo: "/images/favicon-roadmaster-new.webp",
     description: "",
-    url: "https://roadmaster.webdemosbe.xyz",
-    status: "development",
-    image: "/images/placeholder-roadmaster.png",
-    tags: ['Nextjs', 'Tailwind', 'Typescript', 'Express', 'Prisma', 'MySQL']
+    url: "https://roadmasterspeakers.com",
+    status: "production",
+    image: "/images/placeholder-roadmaster-new.webp",
+    tags: ['Next.js', 'Node.js', 'Tailwind', 'Typescript', 'Express', 'Prisma', 'MySQL']
   }
 ]

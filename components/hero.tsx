@@ -48,7 +48,7 @@ export function Hero() {
 <div ref={containerRef} className="bg-foreground relative min-h-screen w-full overflow-hidden">
   <Meteors number={30} />
   {/* TEXT CONTENT */}
-  <div className="inset-x-4 relative z-10 flex min-h-screen items-center">
+  <div className="inset-x-4 relative z-50 flex min-h-screen items-center">
     {/* <div className="w-full px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto"> */}
         <motion.h1

@@ -9,15 +9,15 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: {
-    default: "Developer Portfolio | Next.js, React & TypeScript Expert",
-    template: "%s | Developer Portfolio",
+    default: "Alfons Portfolio | Next.js, Node.js, React, TypeScript",
+    template: "%s | Alfons Portfolio",
   },
   description:
-    "Full-stack developer specializing in Next.js, React, TypeScript, and Prisma. Building modern, performant, and scalable web applications with cutting-edge technologies.",
+    "Alfons is a Full-stack developer specializing in Next.js, React, TypeScript, and Prisma. Building modern, performant, and scalable web applications.",
   keywords: [
     "Next.js developer",
     "React developer",
-    "TypeScript expert",
+    "TypeScript developer",
     "Prisma ORM",
     "Full-stack developer",
     "Web development",
@@ -25,25 +25,25 @@ export const metadata: Metadata = {
     "Backend developer",
     "JavaScript",
     "Node.js",
-    "Portfolio",
+    "Alfons Portfolio",
   ],
-  authors: [{ name: "Your Name" }],
-  creator: "Your Name",
+  authors: [{ name: "Alfons Richardo" }],
+  creator: "Alfons Richardo",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://yourportfolio.com",
-    title: "Developer Portfolio | Next.js, React & TypeScript Expert",
+    url: "https://alfonsrichardo.com/",
+    title: "Alfons Portfolio | Next.js, Node.js, React, TypeScript",
     description:
       "Full-stack developer specializing in Next.js, React, TypeScript, and Prisma. Building modern, performant web applications.",
-    siteName: "Developer Portfolio",
+    siteName: "Alfons Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Developer Portfolio | Next.js, React & TypeScript Expert",
+    title: "Alfons Portfolio | Next.js, Node.js, React, TypeScript",
     description:
       "Full-stack developer specializing in Next.js, React, TypeScript, and Prisma. Building modern web applications.",
-    creator: "@yourusername",
+    creator: "@alfonsrichardo",
   },
   robots: {
     index: true,
@@ -55,24 +55,6 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-  generator: "v0.app",
-  icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
   },
 }
 
