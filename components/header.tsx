@@ -1,10 +1,8 @@
 "use client"
 
-import { Briefcase, Code2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { smoothScrollToElement } from "@/lib/scrollUtils"
-import { AuroraText } from "./ui/aurora-text"
 import { useEffect, useState } from "react"
 
 export function Header() {
@@ -47,8 +45,8 @@ export function Header() {
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-2 hover:cursor-pointer hover:scale-110 ease-in-out duration-200 transition-all" onClick={() => smoothScrollToElement("about")}>
-                <Briefcase className={`w-6 h-6 ${navbarBg ? 'text-foreground' : 'text-background hover:text-background'}`} />
-                <span className="font-semibold text-lg"><AuroraText colors={["#C40062", "#5B21B6", "#1E40AF", "#0369A1"]}>Alfons</AuroraText> Portofolio</span>
+                {/* <Briefcase className={`w-6 h-6 ${navbarBg ? 'text-foreground' : 'text-background hover:text-background'}`} /> */}
+                <span className="font-semibold text-lg">Alfons Richardo</span>
             </div>
             <nav className={`hidden md:flex items-center gap-8`}>
                 <Button

@@ -26,7 +26,7 @@ export const allBrands : ProjectCardProps[] = [
     url: "https://acrspeaker.com",
     status: "production",
     image: "/images/placeholder-acr.webp",
-    tags: ['Next.js', 'Node.js', 'Tailwind', 'Typescript', 'Express', 'Prisma', 'MySQL']
+    tags: ['Next.js', 'Node.js', 'Tailwind', 'Typescript', 'Express', 'Prisma', 'MySQL', 'Internationalization']
   },
   {
     title: "Legacy Speaker",
@@ -38,12 +38,21 @@ export const allBrands : ProjectCardProps[] = [
     tags: ['Next.js', 'Node.js', 'Tailwind', 'Typescript', 'Express', 'Prisma', 'MySQL']
   },
   {
-    title: "Roadmaster",
+    title: "Roadmaster Speaker",
     logo: "/images/favicon-roadmaster-new.webp",
     description: "",
     url: "https://roadmasterspeakers.com",
     status: "production",
     image: "/images/placeholder-roadmaster-new.webp",
-    tags: ['Next.js', 'Node.js', 'Tailwind', 'Typescript', 'Express', 'Prisma', 'MySQL']
-  }
+    tags: ['Next.js', 'Node.js', 'Tailwind', 'Typescript', 'Express', 'Prisma', 'MySQL', 'Internationalization']
+  },
+  {
+    title: "Fidelity Pro Audio",
+    logo: "/images/logo_fidelity_black.webp",
+    description: "",
+    url: "https://fidelity.webdemosbe.xyz/",
+    status: "development",
+    image: "/images/placeholder-fidelity.webp",
+    tags: ['Next.js', 'Node.js', 'Tailwind', 'Typescript', 'Express', 'Prisma', 'MySQL', 'Internationalization']
+  },
 ]

@@ -1,73 +1,67 @@
-'use client'
-
 import { ExternalLink } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
 import Image from 'next/image'
-import { ProjectCardProps } from '@/lib/allWebsite'
 import Link from 'next/link'
-import { InteractiveHoverButton } from './ui/interactive-hover-button'
-
-
+import { ProjectCardProps } from '@/lib/allWebsite'
 
 export function ProjectCard({ title, logo, description, url, status, image, tags }: ProjectCardProps) {
+  const isLive = status === 'production'
+  
   return (
-    <div className="group relative overflow-hidden rounded-2xl border shadow-[#7928ca] bg-card shadow-md hover:shadow-lg transition-all duration-300 hover:shadow-[#0070f3] hover:-translate-y-1">
-        <Link
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <div className="relative h-56 overflow-hidden bg-secondary/50">
-                <Image
-                src={image || "/placeholder.svg"}
+    <div className="block">
+      <div className="rounded-lg border border-border bg-card overflow-hidden hover:border-primary/50 transition-colors shadow-xl">
+        {/* Image */}
+        <div className="relative h-48 overflow-hidden bg-secondary/30 border-b">
+          <Image
+            src={image || '/placeholder.svg'}
+            alt={title}
+            width={500}
+            height={300}
+            className="h-full w-full object-cover"
+          />
+        </div>
+
+        {/* Content */}
+        <div className="space-y-4 p-6">
+          {/* Header */}
+          <div className="flex items-start justify-between gap-3">
+            <div className="flex items-center gap-3">
+              <Image
+                src={logo || '/placeholder.svg'}
                 alt={title}
-                width={500}
-                height={500}
-                className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                width={40}
+                height={40}
+                className="h-10 w-10 object-contain"
+              />
+              <h3 className="font-semibold text-foreground">{title}</h3>
             </div>
+            <Badge className={`shrink-0 ${isLive ? 'bg-green-500 text-white' : 'bg-blue-500 text-white'}`}>
+              {isLive ? 'Live' : 'Dev'}
+            </Badge>
+          </div>
 
-            <div className="space-y-5 p-7">
-                <div className="space-y-3">
-                <div className="flex items-center justify-between gap-3">
-                    <div className="flex items-center justify-center gap-4">
-                        <Image
-                            src={logo || "/placeholder.svg"}
-                            alt={title}
-                            width={500}
-                            height={500}
-                            className="max-h-12 w-fit object-contain transition-transform duration-300"
-                        />
-                        <div className='text-foreground font-bold'>{title}</div>
-                    </div>
-                    <Badge
-                    variant={status === 'production' ? 'default' : 'secondary'}
-                    className={`font-semibold text-xs px-3 py-1 ${status === 'production' ? 'bg-emerald-500/20 text-emerald-700 dark:text-emerald-400' : 'bg-blue-500/20 text-blue-700 dark:text-blue-400'}`}
-                    >
-                    {status === 'production' ? '✓ Live' : '◉ Dev'}
-                    </Badge>
-                </div>
-                <p className="text-sm text-muted-foreground leading-relaxed">{description}</p>
-                </div>
+          {/* Description */}
+          <p className="text-sm text-muted-foreground leading-relaxed">{description}</p>
 
-                <div className="flex flex-wrap gap-2">
-                {tags.map((tag: string) => (
-                    <Badge key={tag} variant="outline" className="border-border/70 text-xs font-medium bg-secondary/40 hover:bg-secondary/60 transition-colors">
-                    {tag}
-                    </Badge>
-                ))}
-                </div>
+          {/* Tags */}
+          <div className="flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <Badge key={tag} variant="outline" className="text-xs">
+                {tag}
+              </Badge>
+            ))}
+          </div>
 
-                <InteractiveHoverButton>
-                    <div 
-                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-semibold text-foreground group-hover:text-background">
-                        Visit Site
-                        <ExternalLink className="h-4 w-4" />
-                    </div>
-                </InteractiveHoverButton>
-            </div>
-        </Link>
+          {/* Button */}
+          <Button asChild className="w-full gap-2" variant="default">
+            <Link href={url} target="_blank" rel="noopener noreferrer" >
+              Visit Site
+              <ExternalLink className="h-4 w-4" />
+            </Link>
+          </Button>
+        </div>
+      </div>
     </div>
   )
 }
