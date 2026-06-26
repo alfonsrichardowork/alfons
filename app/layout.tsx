@@ -42,15 +42,15 @@ export const metadata: Metadata = {
       "Full-stack developer specializing in Next.js, React, TypeScript, and Prisma. Building modern web applications.",
     creator: "@alfonsrichardo",
   },
+  alternates: {
+    canonical: `https://alfonsrichardo.com/`,
+  },
   robots: {
     index: true,
     follow: true,
     googleBot: {
       index: true,
       follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
     },
   },
 }
