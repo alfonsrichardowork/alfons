@@ -20,6 +20,15 @@ export const allBrands : ProjectCardProps[] = [
     tags: ['Next.js', 'Node.js', 'Tailwind', 'Typescript', 'Express', 'Prisma', 'MySQL']
   },
   {
+    title: "SB Audience",
+    logo: "/images/logo-sba.png",
+    description: "",
+    url: "https://webdemosbe.xyz/sbaudience",
+    status: "development",
+    image: "/images/placeholder-sbau.webp",
+    tags: ['Next.js', 'Node.js', 'Tailwind', 'Typescript', 'Express', 'Prisma', 'MySQL']
+  },
+  {
     title: "ACR Speaker",
     logo: "/images/favicon-acr.ico",
     description: "",
