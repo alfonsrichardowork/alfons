@@ -39,7 +39,7 @@ export const allBrands : ProjectCardProps[] = [
   },
   {
     title: "Roadmaster Speaker",
-    logo: "/images/favicon-roadmaster-new.webp",
+    logo: "/images/logo_only_roadmaster_black.webp",
     description: "",
     url: "https://roadmasterspeakers.com",
     status: "production",
