@@ -59,8 +59,8 @@ export const allBrands : ProjectCardProps[] = [
     title: "Fidelity Pro Audio",
     logo: "/images/logo_fidelity_black.webp",
     description: "",
-    url: "https://fidelity.webdemosbe.xyz/",
-    status: "development",
+    url: "https://fidelityproaudio.com/",
+    status: "production",
     image: "/images/placeholder-fidelity.webp",
     tags: ['Next.js', 'Node.js', 'Tailwind', 'Typescript', 'Express', 'Prisma', 'MySQL', 'Internationalization']
   },
